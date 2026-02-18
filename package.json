@@ -1,0 +1,9 @@
+{
+  "name": "stream-llm-api",
+  "version": "1.0.0",
+  "description": "Streaming LLM Response Handler — Vercel Serverless",
+  "private": true,
+  "dependencies": {
+    "openai": "^4.20.0"
+  }
+}
