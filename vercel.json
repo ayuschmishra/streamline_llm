@@ -1,23 +1,12 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
         {
-            "src": "api/**/*.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/stream",
-            "methods": [
-                "POST",
-                "OPTIONS"
-            ],
-            "dest": "/api/stream"
+            "source": "/stream",
+            "destination": "/api/stream"
         },
         {
-            "src": "/",
-            "dest": "/api/index"
+            "source": "/",
+            "destination": "/api/index"
         }
     ]
 }
